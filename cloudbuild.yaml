@@ -6,6 +6,14 @@ options:
   logging: CLOUD_LOGGING_ONLY
 
 steps:
+  # Artifact Registry 인증 설정
+  - name: 'gcr.io/cloud-builders/gcloud'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        gcloud auth configure-docker ${_REGION}-docker.pkg.dev --quiet
+
   # Node.js 의존성 설치 및 빌드
   - name: 'node:20-alpine'
     entrypoint: 'sh'
@@ -23,6 +31,8 @@ steps:
       - '${_REGION}-docker.pkg.dev/${_PROJECT_ID}/${_REPO_NAME}/umodeler-api:$SHORT_SHA'
       - '-t'
       - '${_REGION}-docker.pkg.dev/${_PROJECT_ID}/${_REPO_NAME}/umodeler-api:latest'
+      - '-f'
+      - 'Dockerfile'
       - '.'
 
   # Artifact Registry에 이미지 푸시
@@ -52,4 +62,11 @@ steps:
 # _PROJECT_ID: GCP 프로젝트 ID
 # _REPO_NAME: Artifact Registry 리포지토리 ID
 # _SERVICE_NAME: Cloud Run 서비스 이름
+
+# 중요 사항:
+# 1. Dockerfile이 프로젝트 루트에 있어야 합니다
+# 2. Dockerfile 예시는 DEPLOYMENT.md를 참조하세요
+# 3. 빌드 실패 시 Cloud Build 로그를 확인하세요:
+#    gcloud builds list --limit=5
+#    gcloud builds log BUILD_ID
 

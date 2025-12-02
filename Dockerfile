@@ -19,4 +19,4 @@ COPY --from=builder /app/dist ./dist
 
 EXPOSE 8080
 
-CMD ["node", "src/dist/main"]
+CMD ["node", "dist/main"]
