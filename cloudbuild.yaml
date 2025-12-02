@@ -6,14 +6,6 @@ options:
   logging: CLOUD_LOGGING_ONLY
 
 steps:
-  # Artifact Registry 인증 설정
-  - name: 'gcr.io/cloud-builders/gcloud'
-    entrypoint: 'bash'
-    args:
-      - '-c'
-      - |
-        gcloud auth configure-docker ${_REGION}-docker.pkg.dev --quiet
-
   # Node.js 의존성 설치 및 빌드
   - name: 'node:20-alpine'
     entrypoint: 'sh'
