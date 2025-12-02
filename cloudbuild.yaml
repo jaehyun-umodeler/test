@@ -19,14 +19,12 @@ steps:
         npm ci
         npm run build
 
-  # Docker 이미지 빌드
+  # Docker 이미지 빌드 (특정 버전 태그만 사용)
   - name: 'gcr.io/cloud-builders/docker'
     args:
       - 'build'
       - '-t'
       - '${_REGION}-docker.pkg.dev/${_PROJECT_ID}/${_REPO_NAME}/umodeler-api:$SHORT_SHA'
-      - '-t'
-      - '${_REGION}-docker.pkg.dev/${_PROJECT_ID}/${_REPO_NAME}/umodeler-api:latest'
       - '-f'
       - 'Dockerfile'
       - '.'
@@ -35,7 +33,6 @@ steps:
   - name: 'gcr.io/cloud-builders/docker'
     args:
       - 'push'
-      - '--all-tags'
       - '${_REGION}-docker.pkg.dev/${_PROJECT_ID}/${_REPO_NAME}/umodeler-api:$SHORT_SHA'
 
   # Cloud Run에 배포
@@ -52,4 +49,3 @@ steps:
       - '--platform'
       - 'managed'
       - '--allow-unauthenticated'
-
