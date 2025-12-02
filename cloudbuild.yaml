@@ -1,3 +1,6 @@
+options:
+  logging: CLOUD_LOGGING_ONLY
+
 steps:
   # Artifact Registry 인증 설정
   - name: 'gcr.io/cloud-builders/gcloud'
