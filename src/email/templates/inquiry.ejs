@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= subject %></title>
+    <style>
+      body {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      h1 {
+        color: #0e6af4;
+        border-bottom: 2px solid #0e6af4;
+        padding-bottom: 10px;
+      }
+      .field {
+        margin-bottom: 15px;
+      }
+      .label {
+        font-weight: bold;
+        color: #666;
+        display: inline-block;
+        min-width: 100px;
+      }
+      .value {
+        color: #333;
+      }
+      .message {
+        background-color: #f5f5f5;
+        padding: 15px;
+        border-radius: 5px;
+        margin-top: 20px;
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><%= subject %></h1>
+
+    <div class="field">
+      <span class="label"><%= name %>:</span>
+      <span class="value"><%= nameValue %></span>
+    </div>
+
+    <div class="field">
+      <span class="label"><%= email %>:</span>
+      <span class="value"><%= emailValue %></span>
+    </div>
+
+    <div class="field">
+      <span class="label"><%= affiliation %>:</span>
+      <span class="value"><%= affiliationValue %></span>
+    </div>
+
+    <div class="field">
+      <span class="label"><%= position %>:</span>
+      <span class="value"><%= positionValue %></span>
+    </div>
+
+    <div class="message">
+      <strong><%= message %>:</strong><br />
+      <%= messageValue %>
+    </div>
+  </body>
+</html>

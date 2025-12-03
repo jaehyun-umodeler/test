@@ -1,56 +1,42 @@
-# compiled output
-/dist
-/node_modules
-/build
-
 # Logs
 logs
 *.log
 npm-debug.log*
-pnpm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-lerna-debug.log*
+pnpm-debug.log*
 
-# OS
-.DS_Store
+# Node modules
+node_modules/
 
-# Tests
-/coverage
-/.nyc_output
+# Build output directories
+dist/
+build/
 
-# IDEs and editors
-/.idea
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
-
-# IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-
-# dotenv environment variable files
+# 환경 변수 파일 (필요에 따라 추가)
 .env
-.env.development.local
-.env.test.local
-.env.production.local
-.env.local
+.env.*.local
+secrets
 
-# temp directory
-.temp
-.tmp
+# Optional npm cache directory
+.npm/
 
-# Runtime data
-pids
-*.pid
-*.seed
-*.pid.lock
+# TypeScript build info
+*.tsbuildinfo
 
-# Diagnostic reports (https://nodejs.org/api/report.html)
-report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+# 테스트 커버리지 결과
+coverage/
+
+# IDE 관련 설정 파일
+.vscode/
+.idea/
+.cursor/
+
+# OS에서 생성하는 파일
+.DS_Store
+Thumbs.db
+
+# 임시 폴더
+_tmp/
+
+cmd/

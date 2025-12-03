@@ -1,0 +1,157 @@
+{
+  "verificationCode": {
+    "subject": "인증 코드",
+    "context": {
+      "subject": "{subject}",
+      "title": "요청하신 인증번호를 발송해 드립니다.",
+      "description": "아래의 인증번호를 인증번호 입력창에 입력해 주세요.",
+      "code": "{code}",
+      "footer": "본 메일은 발신전용 입니다."
+    }
+  },
+  "welcome": {
+    "subject": "회원가입을 환영합니다",
+    "context": {
+      "subject": "{subject}",
+      "welcomeTitle": "환영합니다!",
+      "welcomeMessage": "유니티 게임 개발의 치트키 🎮<br /><strong>유모델러</strong>와 함께 해주셔서 감사해요.<br />이제부터 유모델러가 여러분의 <strong>게임 개발</strong>을 적극 지원할게요!",
+      "newToUModeler": "유모델러는 처음인데?",
+      "manualMessage": "유모델러 팀이 작성한 <strong>매뉴얼</strong>을 확인해 보세요.<br />설치부터 응용까지 따라 해볼 수 있어요🎀<br />다 읽고 나면, 유모델러와 절친한 친구가 되어 있을 거예요",
+      "discordMessage": "유모델러의 <strong>디스코드</strong> 채널에 놀러 오세요!",
+      "discordDescription": "개발자들에게 직접 질문하거나 🔍<br />다른 사람들과 의견을 나누고, 작업물을 공유할 수 있어요.",
+      "manualButtonText": "매뉴얼 보러가기",
+      "manualButtonLink": "https://docs.umodeler.com/x-ko",
+      "discordButtonText": "공식 디스코드 채널 놀러가기",
+      "discordButtonLink": "https://discord.com/invite/qv54qkPdgy",
+      "questionTitle": "궁금한게 있으면 어떻게 해?",
+      "newsletterButtonText": "뉴스레터 구독하기",
+      "newsletterButtonLink": "https://mailchi.mp/umodeler.com/xsgf2lk1h8",
+      "businessInfo": "사업자등록번호 : 813-88-01285 | 대표 : 황재식 | 서울특별시 강남구 강남대로 132길 59, 5층 501호",
+      "inquiryLabel": "문의",
+      "closingMessage": "그럼 여러분의 멋진 게임을 만들 때 다시 만나요!<br /><strong>유모델러</strong> 드림",
+      "term": "이용약관",
+      "privacy": "개인정보처리방침"
+    }
+  },
+  "license": {
+    "issued": {
+      "subject": "라이선스 발급",
+      "context": {
+        "subject": "{subject}",
+        "loginPage": "{loginPage}",
+        "title": "라이선스가 할당되었습니다.",
+        "licensePage": "{licensePage}",
+        "plan": "{plan}",
+        "footer": "본 메일은 발신전용 입니다.",
+        "teamManagerLabel": "팀 관리자",
+        "ownerName": "{ownerName}",
+        "userName": "{userName}",
+        "assignedMemberLabel": "할당된 멤버",
+        "availablePlanLabel": "사용 가능한 Plan",
+        "checkNowButton": "지금 바로 확인하기"
+      }
+    },
+    "issuedPro": {
+      "subject": "라이선스 발급",
+      "context": {
+        "subject": "{subject}",
+        "loginPage": "{loginPage}",
+        "title": "라이선스가 할당되었습니다.",
+        "licensePage": "{licensePage}",
+        "plan": "{plan}",
+        "footer": "본 메일은 발신전용 입니다.",
+        "userName": "{userName}",
+        "assignedMemberLabel": "할당된 멤버",
+        "availablePlanLabel": "사용 가능한 Plan",
+        "checkNowButton": "지금 바로 확인하기"
+      }
+    },
+    "revoked": {
+      "subject": "라이선스 해지",
+      "context": {
+        "subject": "{subject}",
+        "loginPage": "{loginPage}",
+        "title": "라이선스가 비활성되었습니다.",
+        "plan": "{plan}",
+        "footer": "본 메일은 발신전용 입니다.",
+        "userName": "{userName}",
+        "assignedMemberLabel": "할당된 멤버",
+        "deactivatedPlanLabel": "비활성된 Plan"
+      }
+    },
+    "removed": {
+      "subject": "라이선스 제거",
+      "context": {
+        "subject": "{subject}",
+        "loginPage": "{loginPage}",
+        "title": "라이선스가 비활성되었습니다.",
+        "plan": "{plan}",
+        "footer": "본 메일은 발신전용 입니다.",
+        "teamManagerLabel": "팀 관리자",
+        "ownerName": "{ownerName}",
+        "userName": "{userName}",
+        "assignedMemberLabel": "할당된 멤버",
+        "deactivatedPlanLabel": "비활성된 Plan"
+      }
+    }
+  },
+  "paymentFailed": {
+    "subject": "결제 실패 안내",
+    "context": {
+      "subject": "{subject}",
+      "errorMessage": "구독 계정과 연결된 결제 방법을 확인하는 중에 오류가 발생했습니다.<br />구독 서비스를 사용하려면 유효한 결제 방법을 제공해야 합니다.",
+      "link": "{link}",
+      "licenseLabel": "라이선스",
+      "licenseCode": "{licenseCode}",
+      "expiresLabel": "만료 예정",
+      "endDate": "{endDate}",
+      "footer": "본 메일은 발신전용 입니다."
+    }
+  },
+  "orgJoin": {
+    "subject": "조직에 참여하도록 초대되었습니다.",
+    "context": {
+      "subject": "{subject}",
+      "title": "조직에 참여하도록 초대되었습니다.",
+      "link": "{link}",
+      "invitedBy": "{inviter}님이 초대하여<br /><strong>{organization}</strong>에 참여하세요.",
+      "instructionMessage": "가입하려면 초대를 수락하고 UModeler X 웹사이트에서 가입하세요.<br />등록 시 즉시 조직에 추가됩니다.",
+      "acceptButton": "초대 수락하기",
+      "footer": "본 메일은 발신전용 입니다."
+    }
+  },
+  "mobileDownload": {
+    "subject": "UModeler X PC 체험을 시작해보세요!",
+    "context": {
+      "subject": "{subject}",
+      "title": "UModeler X 실행하는 방법",
+      "thankYouMessage": "관심 가져주셔서 감사합니다.<br />아래 영상과 가이드 문서를 따라 체험을 시작해보세요!",
+      "guideButton": "설치 가이드",
+      "guideButtonLink": "https://docs.umodeler.com/ko/docs/installation-guide-pro-umodeleraccountno-emailsignup/",
+      "videoGuideMessage": "영상 가이드를 부며 단계별로 설치해보세요.",
+      "downloadButtonText": "다운로드",
+      "downloadButtonLink": "https://docs.umodeler.com/x-ko/",
+      "trialDescription": "✅이 체험판은 <strong>45일</strong>간 모든 기능이 <strong>무료로 제공</strong>되며,",
+      "trialNoCard": "카드 정보는 일절 요구되지 않습니다.",
+      "trialExperience": "UModeler X의 강력한 기능을 지급 바로 부담 없이 경험해보세요.",
+      "trialInquiryMessage": "궁금하신 점이 있으시면 언제든지 <br /><strong>contact.support@umodeler.com</strong>으로 문의해 주세요.",
+      "trialFooter": "이 메일은 무료 체험 신청에 따라 자동 발송되었습니다.",
+      "downloadMessage": "바로 다운로드하고 유니티 프로젝트에 import하여 사용해보세요!"
+    }
+  },
+  "inquiry": {
+    "context": {
+      "subject": "{subject}",
+      "name": "이름",
+      "nameValue": "{name}",
+      "email": "이메일",
+      "emailValue": "{email}",
+      "affiliation": "소속",
+      "affiliationValue": "{affiliation}",
+      "position": "직책",
+      "positionValue": "{position}",
+      "message": "메시지",
+      "messageValue": "{message}"
+    }
+  }
+}

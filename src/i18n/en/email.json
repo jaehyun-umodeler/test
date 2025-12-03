@@ -1,0 +1,157 @@
+{
+  "verificationCode": {
+    "subject": "Verification Code",
+    "context": {
+      "subject": "{subject}",
+      "title": "We have sent your requested Verification Code.",
+      "description": "Please enter the verification code below into the input field.",
+      "code": "{code}",
+      "footer": "This is an automated email. Please do not reply."
+    }
+  },
+  "welcome": {
+    "subject": "Welcome to UModeler",
+    "context": {
+      "subject": "{subject}",
+      "welcomeTitle": "Welcome!",
+      "welcomeMessage": "The Ultimate Tool for Unity game development 🎮<br />Thank you for being with <strong>UModeler</strong>!<br />From now on, UModeler will actively support your <strong>game development</strong>! 🚀",
+      "newToUModeler": "New to UModeler?",
+      "manualMessage": "Check out the <strong>manual</strong> written by the UModeler team.<br />You can follow along from installation to application🎀<br />After reading it all, you'll be best friends with UModeler!",
+      "discordMessage": "Come visit <strong>Discord</strong> channel!",
+      "discordDescription": "Ask developers directly or 🔍<br />Share opinions and work with others.",
+      "manualButtonText": "Go to the manual",
+      "manualButtonLink": "https://docs.umodeler.com/",
+      "discordButtonText": "Join the Discord channel",
+      "discordButtonLink": "https://discord.com/invite/qv54qkPdgy",
+      "questionTitle": "Have questions?",
+      "newsletterButtonText": "Subscribe to the newsletter 📩",
+      "newsletterButtonLink": "https://mailchi.mp/umodeler.com/xsgf2lk1h8",
+      "businessInfo": "Business Registration Number: 813-88-01285 | CEO: Jae Sik Hwang | 501, 5F, 59 Gangnam-daero 132-gil, Gangnam-gu, Seoul",
+      "inquiryLabel": "Contact",
+      "closingMessage": "See you again when you make your amazing game!<br />—<strong>UModeler Team</strong>",
+      "term": "Terms of Service",
+      "privacy": "Privacy Policy"
+    }
+  },
+  "license": {
+    "issued": {
+      "subject": "License Issued",
+      "context": {
+        "subject": "{subject}",
+        "loginPage": "{loginPage}",
+        "title": "License has been assigned.",
+        "licensePage": "{licensePage}",
+        "plan": "{plan}",
+        "footer": "This email is for notification purposes only.",
+        "teamManagerLabel": "Team Manager",
+        "ownerName": "{ownerName}",
+        "userName": "{userName}",
+        "assignedMemberLabel": "Assigned Member",
+        "availablePlanLabel": "Available Plan",
+        "checkNowButton": "Check Now"
+      }
+    },
+    "issuedPro": {
+      "subject": "License Issued",
+      "context": {
+        "subject": "{subject}",
+        "loginPage": "{loginPage}",
+        "title": "License has been assigned.",
+        "licensePage": "{licensePage}",
+        "plan": "{plan}",
+        "footer": "This email is for notification purposes only.",
+        "userName": "{userName}",
+        "assignedMemberLabel": "Assigned Member",
+        "availablePlanLabel": "Available Plan",
+        "checkNowButton": "Check Now"
+      }
+    },
+    "revoked": {
+      "subject": "License Revoked",
+      "context": {
+        "subject": "{subject}",
+        "loginPage": "{loginPage}",
+        "title": "Your license has been deactivated.",
+        "plan": "{plan}",
+        "footer": "This email is for notification purposes only.",
+        "userName": "{userName}",
+        "assignedMemberLabel": "Assigned Member",
+        "deactivatedPlanLabel": "Deactivated Plan"
+      }
+    },
+    "removed": {
+      "subject": "License Removed",
+      "context": {
+        "subject": "{subject}",
+        "loginPage": "{loginPage}",
+        "title": "Your license has been deactivated.",
+        "plan": "{plan}",
+        "footer": "This email is for notification purposes only.",
+        "teamManagerLabel": "Team Manager",
+        "ownerName": "{ownerName}",
+        "userName": "{userName}",
+        "assignedMemberLabel": "Assigned Member",
+        "deactivatedPlanLabel": "Deactivated Plan"
+      }
+    }
+  },
+  "paymentFailed": {
+    "subject": "Payment Failed Notice",
+    "context": {
+      "subject": "{subject}",
+      "errorMessage": "Error verifying your subscription and payment method.<br />Provide a valid payment method to continue.",
+      "link": "{link}",
+      "licenseLabel": "License",
+      "licenseCode": "{licenseCode}",
+      "expiresLabel": "Expires on",
+      "endDate": "{endDate}",
+      "footer": "This email is for notification purposes only."
+    }
+  },
+  "orgJoin": {
+    "subject": "You have been invited to join the organization.",
+    "context": {
+      "subject": "{subject}",
+      "title": "You've been invited to join the organization",
+      "link": "{link}",
+      "invitedBy": "You've been invited by {inviter}<br />to join <strong>{organization}</strong>.",
+      "instructionMessage": "To join, accept the invitation and sign up on the UModeler X website.<br />Once registered, you'll be added to the organization immediately.",
+      "acceptButton": "Accept Invitation",
+      "footer": "This email is for notification purposes only."
+    }
+  },
+  "mobileDownload": {
+    "subject": "Get Started with UModeler X on PC!",
+    "context": {
+      "subject": "{subject}",
+      "title": "How to Install UModeler X Trial",
+      "thankYouMessage": "Thank you for your interest.<br />Follow the guide below to begin.",
+      "guideButton": "Open Installation Guide",
+      "guideButtonLink": "https://docs.umodeler.com/docs/installation-guide-pro-umodeleraccountno-emailsignup/",
+      "videoGuideMessage": "Watch the video for step-by-step instructions.",
+      "downloadButtonText": "Download",
+      "downloadButtonLink": "https://docs.umodeler.com/",
+      "trialDescription": "✅Your trial includes <strong>45 days</strong> of full access – <strong>no credit card</strong> required.",
+      "trialNoCard": "",
+      "trialExperience": "Experience the full power of UModeler X, risk-free",
+      "trialInquiryMessage": "If you have any questions, feel free to contact us at <br /><strong>contact.support@umodeler.com</strong>.",
+      "trialFooter": "This email was automatically sent based on your free trial application.",
+      "downloadMessage": "Download now and import it into your Unity project!"
+    }
+  },
+  "inquiry": {
+    "context": {
+      "subject": "{subject}",
+      "name": "Name",
+      "nameValue": "{name}",
+      "email": "Email",
+      "emailValue": "{email}",
+      "affiliation": "Affiliation",
+      "affiliationValue": "{affiliation}",
+      "position": "Position",
+      "positionValue": "{position}",
+      "message": "Message",
+      "messageValue": "{message}"
+    }
+  }
+}
