@@ -3,20 +3,20 @@ FROM node:24-alpine AS builder
 WORKDIR /app
 
 COPY package*.json ./
-RUN npm ci
+RUN npm i
 
 COPY . .
 RUN npm run build
 
-FROM node:20-alpine
+FROM node:24-alpine
 
 WORKDIR /app
 
 COPY package*.json ./
-RUN npm ci --only=production
+RUN npm i --production
 
 COPY --from=builder /app/dist ./dist
 
-EXPOSE 8080
+EXPOSE 5050
 
 CMD ["node", "dist/src/main"]

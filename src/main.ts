@@ -73,7 +73,7 @@ async function bootstrap() {
   if (process.env.NODE_ENV === 'local') {
     await app.listen(5050, '127.0.0.1');
   } else {
-    await app.listen(5050);
+    await app.listen(5050, '0.0.0.0');
   }
 
   console.log(`Application is running on: ${await app.getUrl()}`);
